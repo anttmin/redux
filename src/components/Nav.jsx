@@ -1,20 +1,11 @@
-import React, { useContext } from 'react'
-import { itemContext } from '../Store/ItemContent';
-const Nav = (props) => {
-  const{items} = useContext(itemContext)
-  const totalCart = items.reduce((currentVal,item)=>{
-    return currentVal + item.amount;
-  },0);
+import React from 'react'
+
+const Nav = ({totalNotes}) => {
   return (
-    <>
-
-      <nav className='nav'>
-
-        <h1 className='header'>Shoppy</h1>
-        <button className='btn' onClick={props.showCartHandeler}>Cart <span>One ({totalCart})</span></button>
-      </nav>
-
-    </>
+    <div className='Nav'>
+         <h2 className='title'>Fire Note</h2>
+         <p className='button'>Total Note - <span>{totalNotes}</span></p>
+    </div>
   )
 }
 
