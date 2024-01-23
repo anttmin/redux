@@ -9,96 +9,39 @@
   box-sizing: border-box;
 }
 
-.fireNote{
-  padding: 20px;
-}
-
-.card{
+section{
+  text-align: center;
   background-color: cornflowerblue;
-  padding: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-radius: 12px;
-}
-
-.card-ctr{
-  padding: 15px 20px;
+  color: white;
+  margin: auto;
+  width: 80%;
+  border-radius: 8px;
+  padding: 8px;
   margin-top: 20px;
-  color: #fff;
 }
 
-input{
-  width: 60%;
-  font-size: 17px;
-  padding: 10px 4px;
-  border: none;
-  outline: none;
-  background-color: #fff;
-  border-radius: 12px;
+.Counter{
+  padding: 2rem;
 }
 
-.submit-btn{
-  background-color: rgb(255, 255, 255);
-  color: cornflowerblue;
-  border: none;
-  outline: none;
-  padding: 10px;
-  border-radius: 12px;
-  font-weight: 600;
-  cursor: pointer;
-}
-
-.Nav{
-  display: flex;
-  justify-content: space-between;
-  padding: 20px;
-}
-
-.Nav .button{
-  border: none;
-  outline: none;
-  padding: 10px;
-  border-radius: 12px;
-  background: cornflowerblue;
-  color: #fff;
-  cursor: default;
+.Counter h1{
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .btn{
-  background: cornflowerblue;
-  outline: none;
-  color: #fff;
+  margin-top: 10px;
+ 
+}
+
+button{
+  background-color: #fff;
+  color: cornflowerblue;
+  padding: 4px 8px;
   border: none;
-  padding: 10px;
-  border-radius: 5px;
+  outline: none;
+  border-radius: 8px;
+  margin: 5px;
+  font-size: 17px;
+  cursor: pointer;
 }
-
-.title{
-  font-size: 1.5rem;
-  color: cornflowerblue;
-}
-
-.message{
-  color: cornflowerblue;
-  text-align: center;
-  margin-top: 10px;
-  font-size: 18px;
-}
-
-.error{
-  color: red;
-  font-size: 18px;
-  text-align: center;
-}
-
-.Intro{
-  text-align: center;
-  margin-top: 10px;
-}
-
-.Intro h3{
-  color: cornflowerblue;
-}
-
-.Intro p{color: cornflowerblue;}
