@@ -1,38 +1,37 @@
-import {useSelector,useDispatch} from "react-redux"
+import { useSelector,useDispatch } from "react-redux"
+import {counterActions} from "../store/counterReducer"
 
 const Counter = () => {
-    const dispatch = useDispatch();
-    const counter = useSelector(state => state.counter);
-    const isShow = useSelector(state => state.isShow)
+  const dispatch = useDispatch();
+  const counter = useSelector((state) => state.counter.counter)
+  const isShow = useSelector(state => state.counter.isShow)
+  const increseHandler = () =>{
+    dispatch(counterActions.increase())
+  }
 
+  const decreseHandler = () =>{
+    dispatch(counterActions.decrease())
+  }
 
-    const increaseHandler = () =>{
-        dispatch({type:"increase"})
-    }
+  const increaseBy5Handler = () =>{
+    dispatch(counterActions.increaseBy5(5))
+  }
 
-    const increaseBy5Handler = () =>{
-        dispatch({type:"increaseBy5",amount:5})
-    }
+  const toggleHandler = () => {
+     dispatch(counterActions.toggle())
+  }
 
-    const decreaseHandler = () =>{
-        dispatch({type:"decrease"})
-    }
-
-    const toggleHandler = () =>{
-        dispatch({type:"toggle"})
-    }
   return (
-    <div className='Counter'>
+    <div className='counter'>
         <h3>Redux Counter</h3>
         {isShow && <h1>{counter}</h1>}
         <hr />
-        <div className='btn'>
-        <button onClick={increaseHandler}>Increase</button>
-        <button onClick={increaseBy5Handler}>IncreaseBy5</button>
-        <button onClick={decreaseHandler}>Decrease</button>
+       <div className='Btn'>
+        <button onClick={increseHandler}>Increase</button>
+        <button onClick={increaseBy5Handler}>Increase By 5</button>
+        <button onClick={decreseHandler}>Decrease</button>
         <button onClick={toggleHandler}>ToggleCounter</button>
-
-        </div>
+       </div>
     </div>
   )
 }

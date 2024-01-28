@@ -7,31 +7,27 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
 }
 
 section{
   text-align: center;
   background-color: cornflowerblue;
-  color: white;
-  margin: auto;
   width: 80%;
+  margin: auto;
+  color: white;
   border-radius: 8px;
-  padding: 8px;
-  margin-top: 20px;
+  padding: 20px;
+  margin-top: 1.5rem;
 }
 
-.Counter{
-  padding: 2rem;
-}
-
-.Counter h1{
-  margin-top: 15px;
-  margin-bottom: 15px;
-}
-
-.btn{
+.Btn{
   margin-top: 10px;
- 
+}
+
+.counter h1{
+  margin: 8px;
 }
 
 button{
@@ -40,8 +36,46 @@ button{
   padding: 4px 8px;
   border: none;
   outline: none;
-  border-radius: 8px;
-  margin: 5px;
-  font-size: 17px;
+  font-family: 17px;
+  border-radius: 4px;
+  margin: 4px;
+}
+
+button:hover{
   cursor: pointer;
+}
+
+.Navv{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: cornflowerblue;
+  color: white;
+  padding: 1rem;
+}
+
+
+.welcomebtn{
+  background-color: rgb(63, 163, 235);
+  color: white;
+}
+
+.Liststyle{
+  display: flex;
+  align-items: center;
+ 
+}
+
+.Liststyle li{
+  margin: 0 .5rem;
+}
+
+.Welcome{
+  text-align: center;
+  margin-top: 1rem;
+ 
+}
+
+.Welcome button{
+  padding: .5rem;
 }
