@@ -22,23 +22,25 @@ section{
   margin-top: 1.5rem;
 }
 
-.Btn{
+/* .Btn{
   margin-top: 10px;
-}
+} */
 
-.counter h1{
+/* .counter h1{
   margin: 8px;
-}
+} */
 
-button{
-  background-color: #fff;
-  color: cornflowerblue;
+button.Todo{
+  background-color: cornflowerblue;
+  color: #fff;
   padding: 4px 8px;
   border: none;
   outline: none;
   font-family: 17px;
   border-radius: 4px;
-  margin: 4px;
+  margin: 3rem  auto;
+  display: block;
+  
 }
 
 button:hover{
